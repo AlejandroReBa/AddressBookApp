@@ -124,7 +124,7 @@ public class MainActivity extends Activity {
             this.listContact.add(new Contact(firstNameText, lastNameText, phoneNumberText, addressText));
 
         }else if (item.getItemId() == R.id.search){
-            String lastNameText = ((EditText)findViewById(R.id.lastname)).toString();
+            String lastNameText = ((EditText)findViewById(R.id.lastname)).getText().toString();
             boolean find = false;
             int index = 0;
             while (!find && index<this.listContact.size()) {
